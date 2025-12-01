@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>かなだけMAP 2025年12月（コンパクト）</title>
 
+  <!-- meta description -->
+  <meta name="description" content="おにぎり屋かなたけの2025年12月の出店マップ。病院・大学・イベント会場などの出店場所を地図でチェックできます。">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="おにぎり屋かなたけ">
+  <meta property="og:title" content="かなだけMAP 2025年12月 出店マップ">
+  <meta property="og:description" content="おにぎり屋かなたけの2025年12月の出店スケジュールをマップで一覧表示。クリックでGoogleマップも開けます。">
+  <!-- 実際にこのページを置くURLに合わせて書き換え -->
+  <meta property="og:url" content="https://jomonkusama.com/kanadake-map-2025-12/">
+  <!-- 1200x630くらいのOGP画像を用意して、このパスに置く -->
+  <meta property="og:image" content="https://jomonkusama.com/ogp/kanadake-map-2025-12_ogp.jpg?v=1">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="かなだけMAP 2025年12月 出店マップ">
+  <meta name="twitter:description" content="おにぎり屋かなたけの2025年12月の出店スケジュールをマップで一覧表示。">
+  <meta name="twitter:image" content="https://jomonkusama.com/ogp/kanadake-map-2025-12_ogp.jpg?v=1">
+
   <!-- Leaflet -->
   <link rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -24,11 +43,11 @@
     /* ===== コンパクトな出店リスト ===== */
     .spot-card{
       position:fixed; right:10px; bottom:10px;
-      width:min(52vw,210px);              /* さらに細く */
-      max-height:24vh;                    /* さらに低く */
+      width:min(52vw,210px);
+      max-height:24vh;
       overflow:auto; -webkit-overflow-scrolling:touch;
-      padding:6px 8px;                    /* 余白も圧縮 */
-      background:rgba(255,255,255,0.82);  /* 透明度UPで地図優先 */
+      padding:6px 8px;
+      background:rgba(255,255,255,0.82);
       backdrop-filter:blur(3px);
       border-radius:10px;
       box-shadow:0 4px 14px rgba(0,0,0,.14);
@@ -43,7 +62,10 @@
       display:inline-block; font-size:8.5px; padding:1px 6px;
       border-radius:999px; background:#fde7a8; color:#5a4b1a; white-space:nowrap;
     }
-    .err{ background:#ffe9e9; color:#8a1f1f; border:1px solid #f1b8b8; border-radius:8px; padding:6px; font-size:10px; }
+    .err{
+      background:#ffe9e9; color:#8a1f1f; border:1px solid #f1b8b8;
+      border-radius:8px; padding:6px; font-size:10px;
+    }
   </style>
 </head>
 <body>
